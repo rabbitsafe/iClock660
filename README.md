@@ -40,7 +40,7 @@ TCP/4370  中控管理软件私有通讯协议端口，可以使用中控管理�
 二、互联网测试
 
 通过fofa.info进行搜索，使用关键字banner="ZK" && protocol="http" && server=="ZK Web Server"，发现存在2.5万多个IP，使用了中控智慧（中控科技）ZKeco/ZKSoftware指纹门禁考勤打卡设备，开放了WEB服务。
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/11.png)   
 
 针对该漏洞编写了POC脚本，该脚本可直接下载数据库文件
  
@@ -49,34 +49,34 @@ TCP/4370  中控管理软件私有通讯协议端口，可以使用中控管理�
  
 
 使用编写的漏洞EXP对fofa.info搜索的结果进行测试，批量测试过程截图如下：
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/12.png)   
 
 发现互联网大量系统存在漏洞，部分存在漏洞的URL如下：
-
+![image](https://github.com/rabbitsafe/iClock660/blob/main/13.png)  
 
 1、案例一
 http://103.122.67.220/csl/login
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/14.png)   
 使用down-exp.py下载系统数据库文件data.dat
- 
- 
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/15.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/16.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/17.png)   
 管理员帐号是1，密码是123，成功登录WEB系统后台
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/18.png)   
 
 2、案例二
 http://37.25.35.123/csl/login
- 
- 
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/19.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/20.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/21.png)   
 管理员帐号是1，密码是285414，成功登录WEB系统后台
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/22.png)   
 
 3、案例二
 http://69.57.237.245/csl/login
- 
- 
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/23.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/24.png)   
+![image](https://github.com/rabbitsafe/iClock660/blob/main/25.png)   
 管理员帐号是2，密码是9262，成功登录WEB系统后台
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/26.png)   
 
