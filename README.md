@@ -18,24 +18,24 @@ UDP/65535	          中控智慧私有协议用于局域网广播
 URL：http://192.168.1.201/
 使用默认管理员1，默认口令123456，攻击者可登录WEB系统，抓取系统备份处存在下载系统数据库文件data.dat的数据包，经过验证，在不登录的情况下，提交该数据包下载系统数据库文件data.dat
 数据包如下：
- 
-
+![image](https://github.com/rabbitsafe/iClock660/blob/main/2.png) 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/3.png) 
  
 2.rar解压出来的文件重命名为22.rar，再对22.rar进行解压，获得系统数据库文件ZKDB.db
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/4.png)  
 该文件属于系统数据库文件，该系统使用的SQLite数据库，使用SQLite数据库管理软件可打开ZKDB.db文件
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/5.png)  
 可以查看指纹识别中控考勤终端iClock660所有数据内容
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/6.png)  
 指纹识别中控考勤终端iClock660开放4370端口
 
 TCP/4370  中控管理软件私有通讯协议端口，可以使用中控管理软件进行连接
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/7.png)  
 默认4370端口连接密码是空，可以通过系统数据库文件data.dat获取连接密码，该设备修改的连接密码是666666
- 
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/8.png)  
+![image](https://github.com/rabbitsafe/iClock660/blob/main/9.png)  
 可控制该设备重启、关机、恢复出厂设置，可对人员数据进行管理等操作
- 
+![image](https://github.com/rabbitsafe/iClock660/blob/main/10.png)  
 
 二、互联网测试
 
